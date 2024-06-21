@@ -1,0 +1,73 @@
+a couple tables, perhaps one table for Students (ID, name, address, etc.) and one table for Courses (number, credits, day of week, etc.).  
+Then create a couple screens to maintain each in table format and another screen to link them together to create a schedule or transcript. 
+
+
+
+DB: ------------------------------------------------------------------------------------------------
+
+Administration table
+
+ID = 1 | MaxCreditsStudent | MaxCreditsClass
+
+
+Student table
+StudentID | FirstName | LastName | EnrolledCredits 
+
+Student_Class table
+StudentClassID | StudentID | ClassID
+
+Class table
+ClassID | Name | Description | Credits
+
+Class_Day table
+ClassDayID | ClassID | Day | Start | End
+
+UI: ------------------------------------------------------------------------------------------------
+
+Classes Tab		-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+- Elements
+  - Class list
+  - create class button
+  - remove class button
+  - edit class fields controls
+  - edit/save button
+
+
+- Actions 
+  - add class
+  - remove class
+  - edit class
+
+Students Tab 		-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+- Elements
+  - student list
+  - add student button
+  - remove student button
+  - edit student fields controls
+  - edit/save student button
+  - student's classes list 
+  - assign class button
+  - remove class button
+
+
+- Actions
+  - add student
+  - remove student
+  - select student
+  - assign class
+  - remove class
+  - 
+
+
+Schedule 		-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+- Elements
+  - dropdown with students, or left/right arrows
+  - Shows an example of a week in a semester. Schedule view
+
+
+- Stretch 
+  - Print transcript button
+
+
+Administration Tab	-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
